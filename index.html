@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ECE ELECTROSWAGGERS - Login</title>
+    <meta name="description" content="College Event Management System for PGP College of Engineering and Technology">
+    <meta name="keywords" content="college events, management, PGP, engineering, technology">
+    <meta property="og:title" content="ECE ELECTROSWAGGERS - Login">
+    <meta property="og:description" content="College Event Management System for PGP College of Engineering and Technology">
+    <meta name="twitter:title" content="ECE ELECTROSWAGGERS - Login">
+    <meta name="twitter:description" content="College Event Management System for PGP College of Engineering and Technology">
+
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react@18/umd/react.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/react-dom@18/umd/react-dom.production.min.js"></script>
+    <script src="https://resource.trickle.so/vendor_lib/unpkg/@babel/standalone/babel.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://resource.trickle.so/vendor_lib/unpkg/lucide-static@0.516.0/font/lucide.css" rel="stylesheet">
+    <style type="text/tailwindcss">
+    @layer theme {
+        :root {
+            --primary-color: #1e40af;
+            --secondary-color: #3b82f6;
+            --accent-color: #f59e0b;
+            --text-primary: #1f2937;
+            --text-secondary: #6b7280;
+            --background-light: #f9fafb;
+            --success-color: #10b981;
+            --error-color: #ef4444;
+            --border-color: #e5e7eb;
+        }
+    }
+
+    @layer base {
+    }
+
+    @layer components {
+        .btn-primary {
+            @apply bg-[var(--primary-color)] text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors duration-200;
+        }
+        
+        .btn-secondary {
+            @apply bg-[var(--secondary-color)] text-white px-4 py-2 rounded-md hover:bg-blue-600 transition-colors duration-200;
+        }
+        
+        .btn-danger {
+            @apply bg-[var(--error-color)] text-white px-4 py-2 rounded-md hover:bg-red-600 transition-colors duration-200;
+        }
+        
+        .form-input {
+            @apply w-full px-4 py-3 border border-[var(--border-color)] rounded-lg focus:ring-2 focus:ring-[var(--primary-color)] focus:border-transparent outline-none;
+        }
+        
+        .card {
+            @apply bg-white rounded-lg shadow-md p-6 border border-[var(--border-color)];
+        }
+        
+        .overlay {
+            @apply absolute inset-0 bg-black bg-opacity-60;
+        }
+    }
+
+    @layer utilities {
+    }
+    </style>
+
+</head>
+<body>
+    <div id="root"></div>
+    
+    <script type="text/babel" src="components/LoginForm.js"></script>
+    <script type="text/babel" src="utils/auth.js"></script>
+    <script type="text/babel" src="app.js"></script>
+</body>
+</html>
